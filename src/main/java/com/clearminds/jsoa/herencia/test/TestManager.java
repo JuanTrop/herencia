@@ -11,7 +11,7 @@ public class TestManager {
 		Persona persona = new Persona("Juan", 23, "Turbaco");
 		PersonaManager pmanager;
 		try {
-			pmanager = new PersonaManager();
+			pmanager = new PersonaManager("implementacion1");
 			pmanager.insertarPersona(persona); //Debe imprimir el mensaje de insertar en 
 		} catch (InstanceException e) {
 			e.printStackTrace();

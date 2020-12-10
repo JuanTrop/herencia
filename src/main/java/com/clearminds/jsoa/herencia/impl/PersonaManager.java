@@ -10,8 +10,8 @@ public class PersonaManager {
 	
 	public PersonaManager() throws InstanceException {
 		try {
-		Class<?> clase =Class.forName("com.clearminds.jsoa.herencia.impl.ServicioPersonaBDD");
-		serv = (ServicioPersonaBDD)clase.newInstance();
+		Class<?> clase =Class.forName("com.clearminds.jsoa.herencia.impl.ServicioPersonaArchivos");
+		serv = (ServicioPersonaArchivos)clase.newInstance();
 		} catch(Exception e){
 			e.printStackTrace();
 			throw new InstanceException("Error al obtener una instancia de ServicioPersonaBDD");
